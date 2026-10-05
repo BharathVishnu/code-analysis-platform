@@ -4,4 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import codesage.backend.model.Repo;
 
-public interface RepoRepository extends JpaRepository <Repo, Integer> {}
+public interface RepoRepository extends JpaRepository <Repo, Integer> {
+    Long getId();
+}
