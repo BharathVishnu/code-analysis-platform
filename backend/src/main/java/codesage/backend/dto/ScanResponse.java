@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 
 public record ScanResponse(
         Long id,
-        Long repositoryId,
+        Integer repositoryId,
         ScanStatus status,
         String branch,
         String commitHash,
