@@ -20,7 +20,7 @@ public class Scan {
 
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "repository_id", nullable = false)
-    private RepoRepository repository;
+    private Repo repository;
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
