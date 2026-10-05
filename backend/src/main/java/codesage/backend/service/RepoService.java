@@ -29,6 +29,10 @@ public class RepoService {
         repo.setName(r.name());
         repo.setBranch(r.branch());
         repo.setUrl(r.url());
+
+        LocalDateTime d = LocalDateTime.now();
+        repo.setCreatedAt(d);
+        repo.setUpdatedAt(d);
         
         Repo saved = repoRepository.save(repo);
         return RepoResponse.from(saved);

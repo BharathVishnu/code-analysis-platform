@@ -9,7 +9,6 @@ public record RepoRequest(
         String name,
 
         @NotBlank(message = "Repository URL is required")
-        @Pattern(regexp = "^(https?|git)://.*", message = "Must be a valid Git URL")
         String url,
 
         @NotBlank(message = "Branch is required")
